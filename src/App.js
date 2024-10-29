@@ -15,6 +15,7 @@ import AddTodo from './API PROVIDER/AddTodo';
 import EditTodo from './API PROVIDER/EditTodo';
 import Infinite from './Infinite Scroll/Infinite';
 import GetData from './New-CRUD/GetData';
+import FieldsAdd from './APP FIELDS/FieldsAdd';
 const App = () => {
   return (
    
@@ -37,6 +38,8 @@ const App = () => {
         <Route exact path="/addtodo/edittodo/:id" element={<EditTodo />} /> 
         <Route exact path="/Infine" element={<Infinite />} /> 
         <Route exact path="/getdata" element={<GetData />} /> 
+        <Route exact path="/appfields" element={<FieldsAdd />} /> 
+
       </Routes>
       </UserProvider>
     </Router>
